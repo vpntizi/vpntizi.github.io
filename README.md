@@ -1,4 +1,4 @@
-# VPN梯子 | 4月4日19.9M/S|免费Clash/SSR/Shadowrocket/V2ray订阅节点  更新时间 2025-04-04 21:59:15
+# VPN梯子 | 4月5日22.5M/S|免费Shadowrocket/V2ray/Clash/SSR订阅节点  更新时间 2025-04-05 08:42:45
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpntizi.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### Clash订阅链接
 
-- https://vpntizi.github.io/uploads/2025/04/0-20250404.yaml
-- https://vpntizi.github.io/uploads/2025/04/1-20250404.yaml
-- https://vpntizi.github.io/uploads/2025/04/2-20250404.yaml
-- https://vpntizi.github.io/uploads/2025/04/3-20250404.yaml
-- https://vpntizi.github.io/uploads/2025/04/4-20250404.yaml
+- https://vpntizi.github.io/uploads/2025/04/0-20250405.yaml
+- https://vpntizi.github.io/uploads/2025/04/1-20250405.yaml
+- https://vpntizi.github.io/uploads/2025/04/2-20250405.yaml
+- https://vpntizi.github.io/uploads/2025/04/3-20250405.yaml
+- https://vpntizi.github.io/uploads/2025/04/4-20250405.yaml
 
 ### V2ray订阅链接
 
-- https://vpntizi.github.io/uploads/2025/04/0-20250404.txt
-- https://vpntizi.github.io/uploads/2025/04/1-20250404.txt
-- https://vpntizi.github.io/uploads/2025/04/2-20250404.txt
-- https://vpntizi.github.io/uploads/2025/04/3-20250404.txt
-- https://vpntizi.github.io/uploads/2025/04/4-20250404.txt
+- https://vpntizi.github.io/uploads/2025/04/0-20250405.txt
+- https://vpntizi.github.io/uploads/2025/04/1-20250405.txt
+- https://vpntizi.github.io/uploads/2025/04/2-20250405.txt
+- https://vpntizi.github.io/uploads/2025/04/3-20250405.txt
+- https://vpntizi.github.io/uploads/2025/04/4-20250405.txt
 
 ### Sing-box订阅链接
 
-- https://vpntizi.github.io/uploads/2025/04/20250404.json
+- https://vpntizi.github.io/uploads/2025/04/20250405.json
 
 ## 更多clash节点订阅 ：
 
