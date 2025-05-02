@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://vpntizi.github.io/news/article-108406.htm" />
+    <meta charset="utf-8">
+    <title>如何在IDEA 中配置 Maven</title>
+        <meta name="description" content="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maven 是一个能使我们的java程序开发节省时间和精力，是开发变得相对简单，还能使开发规范化的工具。" />
+        <link rel="icon" href="/assets/website/img/v2rayclashx/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="VPN梯子 节点订阅中文官网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vpntizi.github.io/news/article-108406.htm" />
+    <meta property="og:site_name" content="VPN梯子 节点订阅中文官网" />
+    <meta property="og:title" content="如何在IDEA 中配置 Maven" />
+    <meta property="og:image" content="https://vpntizi.github.io/uploads/20240906/90d7ad08ba8766ce9c6a2ac2136aa0a1.webp" />
+        <meta property="og:release_date" content="2025-04-30T09:35:29" />
+    <meta property="og:updated_time" content="2025-04-30T09:35:29" />
+        <meta property="og:description" content="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maven 是一个能使我们的java程序开发节省时间和精力，是开发变得相对简单，还能使开发规范化的工具。" />
+        
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="如何在IDEA 中配置 Maven">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/assets/website/js/frontend/v2rayclashx/bootstrap/bootstrap.min.css">
+    <!-- themefy-icon -->
+    <link rel="stylesheet" href="/assets/website/js/frontend/v2rayclashx/themify-icons/themify-icons.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="/assets/website/js/frontend/v2rayclashx/slick/slick.css">
+    <!-- venobox popup -->
+    <link rel="stylesheet" href="/assets/website/js/frontend/v2rayclashx/Venobox/venobox.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="/assets/website/js/frontend/v2rayclashx/aos/aos.css">
+    <!-- Main Stylesheet -->
+    <link href="/assets/website/css/v2rayclashx/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4NCS1G5XHF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4NCS1G5XHF');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!-- navigation -->
+    <section class="fixed-top navigation">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/">
+                                <span>VPN梯子</span>
+                                </a>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- navbar -->
+                <div class="collapse navbar-collapse text-center" id="navbar">
+                    <ul class="navbar-nav ml-auto">
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/">首页</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/free-nodes/">免费节点</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/paid-subscribe/">推荐机场</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/news/">新闻资讯</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/client.htm">客户端</a>
+                        </li>
+                                            </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- /navigation -->
+    <!-- about us -->
+    <section class="section-lg about pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-title">如何在IDEA 中配置 Maven</h2>
+                </div>
+                <div class="col-lg-12 mb-100">
+                    <p>
+                      <a href="/">首页</a> / <a href="/news/">新闻资讯</a> / 正文
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- background shapes -->
+        <img src="/assets/website/img/v2rayclashx/background-shape/green-dot.png" alt="background-shape" class="about-bg-1 up-down-animation">
+        <img src="/assets/website/img/v2rayclashx/background-shape/blue-dot.png" alt="background-shape" class="about-bg-2 left-right-animation">
+        <img src="/assets/website/img/v2rayclashx/background-shape/green-half-cycle.png" alt="background-shape" class="about-bg-3 up-down-animation">
+        <img src="/assets/website/img/v2rayclashx/background-shape/seo-ball-1.png" alt="background-shape" class="about-bg-4 left-right-animation">
+        <img src="/assets/website/img/v2rayclashx/background-shape/team-bg-triangle.png" alt="background-shape" class="about-bg-5 up-down-animation">
+        <img src="/assets/website/img/v2rayclashx/background-shape/service-half-cycle.png" alt="background-shape" class="about-bg-6 left-right-animation">
+    </section>
+    <!-- /about us -->
+    <!-- feature -->
+    <section class="section feature mb-0" id="feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                                    <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                      				  				  				<div id="content_views" class="htmledit_views"> <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maven 是一个能使我们的java程序开发节省时间和精力，是开发变得相对简单，还能使开发规范化的工具。在我们开发过程中导入的第三方jar包可能需要其他jar包的支持才能使用，而我们要去弄明白这些依赖的jar包，然后导入，这一过程可能需要耗费我们大量的精力和时间。有时候如果需要的jar数量过于panda，无疑会给我们的开发添堵。&nbsp;而使用 Maven 后，<span style="color:#fe2c24;"><strong>Maven 就可以替我们自动的将当前 jar 包所依赖的其他所有 jar 包全部导入进来，</strong></span>&nbsp;不需要我们自己再去导入相关jar包，能够节省大量的时间和精力，我们也可以不用去了解哪个jar包依赖了哪个jar包，直接配置Maven仓库就行。但相对地会对它产生极大的依赖。</p> <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以下是在IDEA中配置Maven的两种方式：</p> <p><strong><span style="color:#fe2c24;">第一种是配置IDEA中自带的Maven插件。</span></strong></p> <p><strong><span style="color:#fe2c24;"></span></strong><span style="color:#0d0016;">&nbsp; 我们在新建模块或者项目时，可以直接新建一个Maven项目，如图所示。要使这个Maven项目能够正常的运行，需要做一些相关配置</span></p> <p><img fetchpriority="high" decoding="async" alt="" height="616" src="http://img.555519.xyz/uploads3/20220603/4176fa35dc64956e8812d7b7e316265e.jpg"></p> <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第一步：在IDEA的安装目录下找到maven的配置文件：IntelliJ IDEA 2018.3.6\plugins\maven\lib\maven3\conf/settings.xml，然后在里面配置本地仓库的位置</p> <pre><code>&lt;localRepository&gt;E:\LocalRepository（本地仓库的位置）&lt;/localRepository&gt;</code></pre> <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;第二步：为了使maven能够自动从中央仓库下载需要的jar包，我们需要给它配置阿里云镜像仓库：在&nbsp; settings.xml 文件的标&lt;mirrors&gt;&lt;/mirrors&gt;标签里面配置以下标签：</p> <pre><code>&lt;mirror&gt;  &lt;id&gt;nexus-aliyun&lt;/id&gt;  &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;  &lt;name&gt;Nexus aliyun&lt;/name&gt;  &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public&lt;/url&gt; &lt;/mirror&gt;</code></pre> <p><img decoding="async" alt="" height="1161" src="http://img.555519.xyz/uploads3/20220603/30def03d90ec42ed16259e842195ca8d.jpg"></p> <p>&nbsp; &nbsp; &nbsp; &nbsp; 第三步：配置完第二步后，我们打开IDEA的Settings/Build,Execution,Deployment/Maven目录，可以发现Maven的主目录为IDEA自带的maven目录，配置文件为自带maven目录下的config/settings.xml文件，本地仓库为我们在配置文件中配置的本地仓库地址。</p> <p>&nbsp; &nbsp; &nbsp; &nbsp; 最后设置Maven自动导包功能：勾上Settings/Build,Execution,Deployment/Maven/Importing下的Import Maven projects automatically选项，给maven设置自动导jar包的功能。</p> <p><img decoding="async" alt="" height="1150" src="http://img.555519.xyz/uploads3/20220603/cdf8f96f97b932ea13b1840191466d16.jpg"></p> <p><strong><span style="color:#fe2c24;">第二种是配置我们自己安装的maven核心程序。</span></strong></p> <p><strong><span style="color:#fe2c24;"></span></strong><span style="color:#0d0016;">&nbsp; 我们在新建模块或者项目时，可以直接新建一个Maven项目，如图所示。要使这个Maven项目能够正常的运行，需要做一些相关配置</span></p> <p><img loading="lazy" decoding="async" alt="" height="1163" src="http://img.555519.xyz/uploads3/20220603/3f7b74d2784e5562850a7117532a4add.jpg"></p> <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;然后保存就可以了。</p> </div> 			                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-108405.htm">python 有序读取和保存yaml格式的文件</a></p>
+                                        <p>下一个：<a href="/news/article-109246.htm">Android：两个Activity之间通过Intent传值</a></p>
+                                    </div>
+                                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-100429.htm" title="victoriaMetrics中的一些Sao操作_在线工具">victoriaMetrics中的一些Sao操作_在线工具</a></li>
+                        <li class="py-2"><a href="/news/article-95257.htm" title="宠物领养百度百科知乎下载（宠物领养百度百科知乎下载）">宠物领养百度百科知乎下载（宠物领养百度百科知乎下载）</a></li>
+                        <li class="py-2"><a href="/news/article-102623.htm" title="宠物领养协议书范本模板大全下载 宠物领养协议书范本模板大全下载图片">宠物领养协议书范本模板大全下载 宠物领养协议书范本模板大全下载图片</a></li>
+                        <li class="py-2"><a href="/news/article-98823.htm" title="模板引擎Thymeleaf基本介绍和使用">模板引擎Thymeleaf基本介绍和使用</a></li>
+                        <li class="py-2"><a href="/news/article-101015.htm" title="1至2月幼猫喂养要多少量（1到2个月的小猫吃多少）">1至2月幼猫喂养要多少量（1到2个月的小猫吃多少）</a></li>
+                        <li class="py-2"><a href="/news/article-96735.htm" title="C语言操作符详解">C语言操作符详解</a></li>
+                        <li class="py-2"><a href="/news/article-88613.htm" title="合肥宠物领养中心（合肥宠物领养救助站）">合肥宠物领养中心（合肥宠物领养救助站）</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-4-28-free-node-subscribe.htm" title="VPN梯子 | 4月28日20.3M/S|免费V2ray/Shadowrocket/SSR/Clash订阅节点">VPN梯子 | 4月28日20.3M/S|免费V2ray/Shadowrocket/SSR/Clash订阅节点</a></li>
+                        <li class="py-2"><a href="/news/article-103454.htm" title="流浪动物领养网站（流浪动物领养网站推荐）">流浪动物领养网站（流浪动物领养网站推荐）</a></li>
+                        <li class="py-2"><a href="/news/article-92934.htm" title="猫咪打疫苗要打多少针（猫打疫苗需要多少）">猫咪打疫苗要打多少针（猫打疫苗需要多少）</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">6</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">81</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+        <img class="feature-bg-1 up-down-animation" src="/assets/website/img/v2rayclashx/background-shape/feature-bg-1.png" alt="bg-shape">
+        <img class="feature-bg-2 left-right-animation" src="/assets/website/img/v2rayclashx/background-shape/feature-bg-2.png" alt="bg-shape">
+    </section>
+    <!-- /feature -->
+        <!-- footer -->
+    <footer class="footer-section footer" style="background-image: url(/assets/website/img/v2rayclashx/backgrounds/footer-bg.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
+                                        <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/free-nodes/">免费节点</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                    <a href="/">VPN梯子 节点订阅中文官网</a> 版权所有 Powered by WordPress
+                </div>
+                <!-- footer social icon -->
+                <nav class="col-12">
+                    <ul class="list-inline text-lg-right text-center social-icon">
+                        <li class="list-inline-item">
+                            <a class="facebook" href="#"><i class="ti-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="twitter" href="#"><i class="ti-twitter-alt"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="linkedin" href="#"><i class="ti-linkedin"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="black" href="#"><i class="ti-github"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+    <!-- jQuery -->
+    <script src="/assets/website/js/frontend/v2rayclashx/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="/assets/website/js/frontend/v2rayclashx/bootstrap/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="/assets/website/js/frontend/v2rayclashx/slick/slick.min.js"></script>
+    <!-- venobox -->
+    <script src="/assets/website/js/frontend/v2rayclashx/Venobox/venobox.min.js"></script>
+    <!-- aos -->
+    <script src="/assets/website/js/frontend/v2rayclashx/aos/aos.js"></script>
+    <!-- Main Script -->
+    <script src="/assets/website/js/frontend/v2rayclashx/script.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
