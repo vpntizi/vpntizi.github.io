@@ -1,4 +1,4 @@
-# VPN梯子 | 10月5日22.5M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/Clash节点/SSR节点订阅节点  更新时间 2025-10-05 08:53:54
+# VPN梯子 | 10月11日21.2M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点订阅节点  更新时间 2025-10-11 09:03:27
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpntizi.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://vpntizi.github.io/uploads/2025/10/0-20251005.yaml
-- https://vpntizi.github.io/uploads/2025/10/1-20251005.yaml
-- https://vpntizi.github.io/uploads/2025/10/2-20251005.yaml
-- https://vpntizi.github.io/uploads/2025/10/3-20251005.yaml
-- https://vpntizi.github.io/uploads/2025/10/4-20251005.yaml
+- https://vpntizi.github.io/uploads/2025/10/0-20251011.yaml
+- https://vpntizi.github.io/uploads/2025/10/1-20251011.yaml
+- https://vpntizi.github.io/uploads/2025/10/2-20251011.yaml
+- https://vpntizi.github.io/uploads/2025/10/3-20251011.yaml
+- https://vpntizi.github.io/uploads/2025/10/4-20251011.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://vpntizi.github.io/uploads/2025/10/0-20251005.txt
-- https://vpntizi.github.io/uploads/2025/10/1-20251005.txt
-- https://vpntizi.github.io/uploads/2025/10/2-20251005.txt
-- https://vpntizi.github.io/uploads/2025/10/3-20251005.txt
-- https://vpntizi.github.io/uploads/2025/10/4-20251005.txt
+- https://vpntizi.github.io/uploads/2025/10/0-20251011.txt
+- https://vpntizi.github.io/uploads/2025/10/1-20251011.txt
+- https://vpntizi.github.io/uploads/2025/10/2-20251011.txt
+- https://vpntizi.github.io/uploads/2025/10/3-20251011.txt
+- https://vpntizi.github.io/uploads/2025/10/4-20251011.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://vpntizi.github.io/uploads/2025/10/20251005.json
+- https://vpntizi.github.io/uploads/2025/10/20251011.json
 
 ## 更多Clash节点订阅 ：
 
