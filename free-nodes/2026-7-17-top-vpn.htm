@@ -288,34 +288,9 @@ sudo </span><span><span class="hljs-built_in">mv</span></span><span> v2ray /usr/
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess AEAD 加密在安全性方面有何优势？</h5></div>
+    <div class="panel-heading"><h5>如何优化 Clash 的 DNS 设置？</h5></div>
     <div class="panel-body">
-        AEAD 加密可防止数据篡改、重放攻击和流量特征泄露。在高封锁环境下保证节点可用，提升数据安全和连接稳定性，同时降低被检测风险，确保长期安全访问。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mihomo 的节点批量操作功能有哪些优势？</h5></div>
-    <div class="panel-body">
-        Mihomo 支持批量导入、删除和更新节点，结合策略组管理，可高效维护大量节点。用户可以快速选择最佳节点，优化访问速度，同时减少手动操作的复杂度。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何在 Windows 上安装 Clash for Windows？</h5></div>
-    <div class="panel-body">
-        在 Windows 上安装 Clash for Windows 十分简单。只需前往官方 GitHub 页面下载最新版安装包，运行安装程序后导入订阅链接或配置文件即可。安装完成后，用户可以通过图形化界面方便地切换节点、编辑规则和控制代理模式。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + XTLS 模式相比普通 VLESS 有哪些优势？</h5></div>
-    <div class="panel-body">
-        XTLS 模式减少冗余加密开销，提高传输效率，并在多连接高负载环境下表现更佳。同时仍保持 TLS 安全性，结合策略组可实现高性能和高隐蔽性的双重优势。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekobox 是否支持自定义 DNS 解析？</h5></div>
-    <div class="panel-body">
-        支持。用户可以在配置中指定 DNS 服务器或启用 DoH/DoT 功能，确保域名解析安全和快速，避免本地 DNS 污染或被劫持。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS 是否比 Trojan 更稳定？</h5></div>
-    <div class="panel-body">
-        两者都非常稳定，但 VLESS 在多平台兼容性上略优，而 Trojan 在 HTTPS 伪装和 TLS 安全性上更强。选择取决于服务器环境与具体需求，两者皆为高性能协议。<hr />    </div>
+        在 Clash 中使用自定义 DNS 可以加快域名解析速度。建议使用 doh（DNS over HTTPS）或 dot（DNS over TLS）配置方式，既能提升速度，也能保护隐私防止 DNS 泄露。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 是否支持多订阅源？</h5></div>
@@ -328,14 +303,39 @@ sudo </span><span><span class="hljs-built_in">mv</span></span><span> v2ray /usr/
         Potatso Lite 是 iOS 上的一款代理客户端，操作简单、界面清爽，适合基础用户。它支持 Shadowsocks、Vmess 等协议，提供流量统计和节点切换功能。虽然功能不如 Quantumult X 强大，但非常易用且稳定。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>如何优化 Clash 的 DNS 设置？</h5></div>
+    <div class="panel-heading"><h5>Nekobox 是否支持自定义 DNS 解析？</h5></div>
     <div class="panel-body">
-        在 Clash 中使用自定义 DNS 可以加快域名解析速度。建议使用 doh（DNS over HTTPS）或 dot（DNS over TLS）配置方式，既能提升速度，也能保护隐私防止 DNS 泄露。<hr />    </div>
+        支持。用户可以在配置中指定 DNS 服务器或启用 DoH/DoT 功能，确保域名解析安全和快速，避免本地 DNS 污染或被劫持。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VLESS + XTLS 模式相比普通 VLESS 有哪些优势？</h5></div>
+    <div class="panel-body">
+        XTLS 模式减少冗余加密开销，提高传输效率，并在多连接高负载环境下表现更佳。同时仍保持 TLS 安全性，结合策略组可实现高性能和高隐蔽性的双重优势。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VLESS 是否比 Trojan 更稳定？</h5></div>
+    <div class="panel-body">
+        两者都非常稳定，但 VLESS 在多平台兼容性上略优，而 Trojan 在 HTTPS 伪装和 TLS 安全性上更强。选择取决于服务器环境与具体需求，两者皆为高性能协议。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>PassWall2 如何实现智能分流？</h5></div>
     <div class="panel-body">
-        PassWall2 通过自定义规则文件控制流量走向。可根据目标域名、国家或 IP 范围自动判断走代理或直连。用户还能加载社区规则，实现类似 Clash 的高效路由分流。    </div>
+        PassWall2 通过自定义规则文件控制流量走向。可根据目标域名、国家或 IP 范围自动判断走代理或直连。用户还能加载社区规则，实现类似 Clash 的高效路由分流。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mihomo 的节点批量操作功能有哪些优势？</h5></div>
+    <div class="panel-body">
+        Mihomo 支持批量导入、删除和更新节点，结合策略组管理，可高效维护大量节点。用户可以快速选择最佳节点，优化访问速度，同时减少手动操作的复杂度。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何在 Windows 上安装 Clash for Windows？</h5></div>
+    <div class="panel-body">
+        在 Windows 上安装 Clash for Windows 十分简单。只需前往官方 GitHub 页面下载最新版安装包，运行安装程序后导入订阅链接或配置文件即可。安装完成后，用户可以通过图形化界面方便地切换节点、编辑规则和控制代理模式。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VMess AEAD 加密在安全性方面有何优势？</h5></div>
+    <div class="panel-body">
+        AEAD 加密可防止数据篡改、重放攻击和流量特征泄露。在高封锁环境下保证节点可用，提升数据安全和连接稳定性，同时降低被检测风险，确保长期安全访问。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -383,16 +383,16 @@ sudo </span><span><span class="hljs-built_in">mv</span></span><span> v2ray /usr/
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-6-21-free-node-subscribe-links.htm" title="VPN梯子 | 6月21日18.8M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/SSR节点/V2ray节点/Clash节点订阅节点">VPN梯子 | 6月21日18.8M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/SSR节点/V2ray节点/Clash节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-8-node-share.htm" title="VPN梯子 | 7月8日19.8M/S|免费V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点/Singbox节点订阅节点">VPN梯子 | 7月8日19.8M/S|免费V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点/Singbox节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-14-node-share.htm" title="VPN梯子 | 6月14日20.8M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Trojan节点/Shadowrocket节点订阅节点">VPN梯子 | 6月14日20.8M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Trojan节点/Shadowrocket节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-11-top-vpn.htm" title="VPN梯子 | 6月11日20.4M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/Clash节点/V2ray节点订阅节点">VPN梯子 | 6月11日20.4M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/Clash节点/V2ray节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-26-vpn-node.htm" title="VPN梯子 | 6月26日21M/S|免费SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点/Clash节点订阅节点">VPN梯子 | 6月26日21M/S|免费SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点/Clash节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-12-vpn-node.htm" title="VPN梯子 | 7月12日19.7M/S|免费Shadowrocket节点/Trojan节点/SSR节点/Singbox节点/Clash节点/V2ray节点订阅节点">VPN梯子 | 7月12日19.7M/S|免费Shadowrocket节点/Trojan节点/SSR节点/Singbox节点/Clash节点/V2ray节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-17-top-vpn.htm" title="VPN梯子 | 6月17日21.5M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点/SSR节点/Clash节点订阅节点">VPN梯子 | 6月17日21.5M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点/SSR节点/Clash节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-6-vpn-free.htm" title="VPN梯子 | 7月6日22.6M/S|免费V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点/SSR节点订阅节点">VPN梯子 | 7月6日22.6M/S|免费V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点/SSR节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-16-top-vpn-node.htm" title="VPN梯子 | 7月16日18.9M/S|免费Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Clash节点订阅节点">VPN梯子 | 7月16日18.9M/S|免费Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Clash节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-27-vpn-github.htm" title="VPN梯子 | 6月27日21.5M/S|免费Clash节点/Singbox节点/Trojan节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点">VPN梯子 | 6月27日21.5M/S|免费Clash节点/Singbox节点/Trojan节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-2-vpn-proxy.htm" title="VPN梯子 | 7月2日20.1M/S|免费SSR节点/Trojan节点/Singbox节点/V2ray节点/Clash节点/Shadowrocket节点订阅节点">VPN梯子 | 7月2日20.1M/S|免费SSR节点/Trojan节点/Singbox节点/V2ray节点/Clash节点/Shadowrocket节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-5-mianfei-vpn.htm" title="VPN梯子 | 7月5日18.9M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点订阅节点">VPN梯子 | 7月5日18.9M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-16-vpn-node.htm" title="VPN梯子 | 6月16日19.3M/S|免费Shadowrocket节点/Trojan节点/V2ray节点/SSR节点/Clash节点/Singbox节点订阅节点">VPN梯子 | 6月16日19.3M/S|免费Shadowrocket节点/Trojan节点/V2ray节点/SSR节点/Clash节点/Singbox节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-21-top-vpn.htm" title="VPN梯子 | 7月21日18.4M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/V2ray节点订阅节点">VPN梯子 | 7月21日18.4M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/V2ray节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-25-vpn-github.htm" title="VPN梯子 | 6月25日18.3M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点订阅节点">VPN梯子 | 6月25日18.3M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-23-share-vpn.htm" title="VPN梯子 | 7月23日20.5M/S|免费Trojan节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点/Singbox节点订阅节点">VPN梯子 | 7月23日20.5M/S|免费Trojan节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点/Singbox节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-4-vpn-proxy.htm" title="VPN梯子 | 7月4日20.3M/S|免费Singbox节点/Clash节点/Trojan节点/SSR节点/V2ray节点/Shadowrocket节点订阅节点">VPN梯子 | 7月4日20.3M/S|免费Singbox节点/Clash节点/Trojan节点/SSR节点/V2ray节点/Shadowrocket节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-20-vpn-proxy.htm" title="VPN梯子 | 7月20日20.4M/S|免费Clash节点/Trojan节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点订阅节点">VPN梯子 | 7月20日20.4M/S|免费Clash节点/Trojan节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-17-top-vpn.htm" title="VPN梯子 | 7月17日20.6M/S|免费SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点订阅节点">VPN梯子 | 7月17日20.6M/S|免费SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-28-free-vpn-node.htm" title="VPN梯子 | 6月28日18.6M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点订阅节点">VPN梯子 | 6月28日18.6M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点订阅节点</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -404,7 +404,7 @@ sudo </span><span><span class="hljs-built_in">mv</span></span><span> v2ray /usr/
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">19</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
+                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">23</span> <a href="/date/2026-06/" title="2026-06 归档">2026-06</a></h4>
