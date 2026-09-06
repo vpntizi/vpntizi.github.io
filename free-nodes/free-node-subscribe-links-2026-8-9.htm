@@ -395,14 +395,14 @@ A：可以。许多高阶用户会在OpenWRT、Padavan等定制路由系统上�
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 支持哪几种代理协议？</h5></div>
+    <div class="panel-heading"><h5>WinXray PAC 模式如何提高访问速度？</h5></div>
     <div class="panel-body">
-        Shadowrocket 支持多种协议，包括 Shadowsocks、Vmess、VLess、Trojan、HTTP、SOCKS5 等。它还可解析部分 QuantumultX 与 Clash 的订阅格式，适合 iOS 用户进行全协议代理管理与切换。<hr />    </div>
+        PAC 模式根据规则判断流量是否走代理，无需手动切换节点。适合访问国内外混合网站，提高访问速度和稳定性，减少误操作导致的访问失败。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>如何在 V2Ray 中自定义路由规则？</h5></div>
+    <div class="panel-heading"><h5>Nekobox 可以自定义路由规则吗？</h5></div>
     <div class="panel-body">
-        在 V2Ray 中可以通过修改 config.json 文件中的 routing 部分来自定义路由规则。用户可以根据 IP 段、域名或地理位置来决定流量的去向，从而实现自动分流或访问加速的效果。<hr />    </div>
+        支持。用户可通过界面或配置文件定义路由规则，按域名、IP 或端口匹配不同节点，实现流量分流。自定义规则增强了网络访问灵活性和安全性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>PassWall2 的节点测速结果如何影响分流？</h5></div>
@@ -410,9 +410,9 @@ A：可以。许多高阶用户会在OpenWRT、Padavan等定制路由系统上�
         PassWall2 会根据节点延迟和成功率自动调整策略组选择最优节点。测速结果直接影响程序选择出口，从而提高连接速度和稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 的路由规则能否实现分国家代理？</h5></div>
+    <div class="panel-heading"><h5>Shadowrocket 支持哪几种代理协议？</h5></div>
     <div class="panel-body">
-        Sing-box 支持 GeoIP 路由规则，通过引入国家数据库可根据 IP 自动判断地理位置。例如可设置 CN 走直连，US/JP 走代理，以此实现分国家策略路由，适合需要访问不同地区内容的用户。<hr />    </div>
+        Shadowrocket 支持多种协议，包括 Shadowsocks、Vmess、VLess、Trojan、HTTP、SOCKS5 等。它还可解析部分 QuantumultX 与 Clash 的订阅格式，适合 iOS 用户进行全协议代理管理与切换。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 的混淆插件如何增强隐蔽性？</h5></div>
@@ -420,9 +420,9 @@ A：可以。许多高阶用户会在OpenWRT、Padavan等定制路由系统上�
         混淆插件可模拟正常协议特征，如 HTTP 或 TLS 流量，使 SSR 流量难以被检测。合理选择混淆方式和协议，可提升在高封锁环境下的长期稳定性和安全性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekobox 可以自定义路由规则吗？</h5></div>
+    <div class="panel-heading"><h5>如何在 V2Ray 中自定义路由规则？</h5></div>
     <div class="panel-body">
-        支持。用户可通过界面或配置文件定义路由规则，按域名、IP 或端口匹配不同节点，实现流量分流。自定义规则增强了网络访问灵活性和安全性。<hr />    </div>
+        在 V2Ray 中可以通过修改 config.json 文件中的 routing 部分来自定义路由规则。用户可以根据 IP 段、域名或地理位置来决定流量的去向，从而实现自动分流或访问加速的效果。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Shadowrocket 可以在哪些平台使用？</h5></div>
@@ -435,14 +435,14 @@ A：可以。许多高阶用户会在OpenWRT、Padavan等定制路由系统上�
         将 Clash 的 rules 段提取出来转换为 Sing-box 的 routing 格式，或直接引用 rule-providers 源。Sing-box 的路由引擎支持更复杂的条件匹配，可结合 GeoIP 与 keyword 实现精细分流策略。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray PAC 模式如何提高访问速度？</h5></div>
-    <div class="panel-body">
-        PAC 模式根据规则判断流量是否走代理，无需手动切换节点。适合访问国内外混合网站，提高访问速度和稳定性，减少误操作导致的访问失败。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Hiddify Next 如何设置用户带宽与流量配额？</h5></div>
     <div class="panel-body">
-        管理员可为每个用户单独设置带宽和流量上限。超出限制时，可自动降速或阻止访问，确保服务器资源合理分配，避免单用户占用过多带宽，提高整体网络公平性和效率。    </div>
+        管理员可为每个用户单独设置带宽和流量上限。超出限制时，可自动降速或阻止访问，确保服务器资源合理分配，避免单用户占用过多带宽，提高整体网络公平性和效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Sing-box 的路由规则能否实现分国家代理？</h5></div>
+    <div class="panel-body">
+        Sing-box 支持 GeoIP 路由规则，通过引入国家数据库可根据 IP 自动判断地理位置。例如可设置 CN 走直连，US/JP 走代理，以此实现分国家策略路由，适合需要访问不同地区内容的用户。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -491,15 +491,15 @@ A：可以。许多高阶用户会在OpenWRT、Padavan等定制路由系统上�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2"><a href="/free-nodes/2026-8-10-vpn-free.htm" title="VPN梯子 | 8月10日22.7M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点/Clash节点/SSR节点订阅节点">VPN梯子 | 8月10日22.7M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点/Clash节点/SSR节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-13-vpn-github.htm" title="VPN梯子 | 7月13日18.2M/S|免费Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/SSR节点/Singbox节点订阅节点">VPN梯子 | 7月13日18.2M/S|免费Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/SSR节点/Singbox节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/vpn-github-2026-8-13.htm" title="VPN梯子 | 8月13日18.2M/S|免费Clash节点/Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/SSR节点订阅节点">VPN梯子 | 8月13日18.2M/S|免费Clash节点/Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/SSR节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/mianfei-vpn-2026-7-29.htm" title="VPN梯子 | 7月29日19.1M/S|免费Shadowrocket节点/Trojan节点/SSR节点/Clash节点/Singbox节点/V2ray节点订阅节点">VPN梯子 | 7月29日19.1M/S|免费Shadowrocket节点/Trojan节点/SSR节点/Clash节点/Singbox节点/V2ray节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-8-vpn-free.htm" title="VPN梯子 | 8月8日21M/S|免费SSR节点/Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点订阅节点">VPN梯子 | 8月8日21M/S|免费SSR节点/Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-25-free-vpn.htm" title="VPN梯子 | 7月25日19.5M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/SSR节点/Trojan节点/Clash节点订阅节点">VPN梯子 | 7月25日19.5M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/SSR节点/Trojan节点/Clash节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-2-top-vpn-node.htm" title="VPN梯子 | 8月2日18.8M/S|免费V2ray节点/Clash节点/Trojan节点/SSR节点/Shadowrocket节点/Singbox节点订阅节点">VPN梯子 | 8月2日18.8M/S|免费V2ray节点/Clash节点/Trojan节点/SSR节点/Shadowrocket节点/Singbox节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-21-top-vpn.htm" title="VPN梯子 | 7月21日18.4M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/V2ray节点订阅节点">VPN梯子 | 7月21日18.4M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/V2ray节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-17-top-vpn.htm" title="VPN梯子 | 7月17日20.6M/S|免费SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点订阅节点">VPN梯子 | 7月17日20.6M/S|免费SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-19-vpn-github.htm" title="VPN梯子 | 7月19日21.9M/S|免费Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点/Trojan节点订阅节点">VPN梯子 | 7月19日21.9M/S|免费Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点/Trojan节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-22-node-share.htm" title="VPN梯子 | 8月22日22.4M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Trojan节点/Clash节点/Singbox节点订阅节点">VPN梯子 | 8月22日22.4M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Trojan节点/Clash节点/Singbox节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/vpn-github-2026-8-15.htm" title="VPN梯子 | 8月15日19.1M/S|免费Clash节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点订阅节点">VPN梯子 | 8月15日19.1M/S|免费Clash节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/share-vpn-2026-8-21.htm" title="VPN梯子 | 8月21日19.9M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/SSR节点/Clash节点/V2ray节点订阅节点">VPN梯子 | 8月21日19.9M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/SSR节点/Clash节点/V2ray节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-30-node-share.htm" title="VPN梯子 | 8月30日21.3M/S|免费Singbox节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点订阅节点">VPN梯子 | 8月30日21.3M/S|免费Singbox节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-14-free-node-subscribe.htm" title="VPN梯子 | 8月14日22.7M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点/Trojan节点订阅节点">VPN梯子 | 8月14日22.7M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点/Trojan节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/share-vpn-2026-8-31.htm" title="VPN梯子 | 8月31日22.3M/S|免费SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点订阅节点">VPN梯子 | 8月31日22.3M/S|免费SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-vpn-2026-8-11.htm" title="VPN梯子 | 8月11日18.8M/S|免费Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点/SSR节点订阅节点">VPN梯子 | 8月11日18.8M/S|免费Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点/SSR节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-28-free-vpn-node.htm" title="VPN梯子 | 8月28日20.1M/S|免费Clash节点/V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点订阅节点">VPN梯子 | 8月28日20.1M/S|免费Clash节点/V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-8-9.htm" title="VPN梯子 | 8月9日21.6M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/V2ray节点订阅节点">VPN梯子 | 8月9日21.6M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/V2ray节点订阅节点</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -511,10 +511,10 @@ A：可以。许多高阶用户会在OpenWRT、Padavan等定制路由系统上�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">16</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">19</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
+                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
             </li>
                     </ul>
     </div>
