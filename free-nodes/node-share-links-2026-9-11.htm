@@ -289,14 +289,9 @@ A：可以，只要设备连接到配置了VPN的路由器，所有流量都会�
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 的节点延迟测量如何帮助选择节点？</h5></div>
+    <div class="panel-heading"><h5>VMess AEAD 加密为何适合高封锁环境？</h5></div>
     <div class="panel-body">
-        Shadowrocket 会测试节点延迟和丢包率，并根据结果排序。用户可快速选择延迟最低的节点访问网站或视频，提高连接速度和稳定性，优化整体网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 如何通过规则文件优化流量分配？</h5></div>
-    <div class="panel-body">
-        Clash 支持自定义规则文件，可根据域名、IP 或应用类型分流流量。结合策略组使用，可自动将视频、游戏、浏览器等流量分配到最优节点，提高访问速度和网络稳定性。<hr />    </div>
+        AEAD 加密可防止数据篡改和流量特征泄露，降低被检测风险。在高封锁网络中，保证节点可用性和连接稳定性，同时提升数据传输安全性，确保长期安全访问。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>QuantumultX 支持哪些定制化分流策略？</h5></div>
@@ -304,29 +299,9 @@ A：可以，只要设备连接到配置了VPN的路由器，所有流量都会�
         QuantumultX 支持域名、IP、端口、协议以及用户自定义脚本分流。结合策略组使用，可实现广告屏蔽、视频加速、游戏优化等功能，提高访问速度和个性化网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>V2RayA 在 Linux 系统中如何开机自启？</h5></div>
-    <div class="panel-body">
-        可通过 systemd 创建启动项或在启动脚本中添加 V2RayA 启动命令。编辑 /etc/systemd/system/v2raya.service 文件并设置 `Restart=always`，执行 `systemctl enable v2raya` 使其随系统自动启动。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Mellow 如何通过配置实现多出口分流？</h5></div>
     <div class="panel-body">
         Mellow 可在配置文件中定义多个 outbound，并结合 routing 规则实现按域名、IP 或策略组分流。这样不同类型的流量可走不同节点，提高使用体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash.Meta 与原版 Clash 有何不同？</h5></div>
-    <div class="panel-body">
-        Clash.Meta 是社区优化版本，支持更多传输协议，如 Hysteria、TUIC、Reality 等。它还增强了 DNS 处理逻辑和脚本分流能力，适合追求极致速度和灵活规则配置的高级用户。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 是否支持手动节点管理？</h5></div>
-    <div class="panel-body">
-        支持。用户可手动输入节点信息或扫描二维码导入节点，并可进行修改或删除。虽然不支持自动订阅更新，但足以满足轻量用户对节点管理和流量分流的需求。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess AEAD 加密为何适合高封锁环境？</h5></div>
-    <div class="panel-body">
-        AEAD 加密可防止数据篡改和流量特征泄露，降低被检测风险。在高封锁网络中，保证节点可用性和连接稳定性，同时提升数据传输安全性，确保长期安全访问。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 的混淆方式如何选择最合适？</h5></div>
@@ -334,9 +309,34 @@ A：可以，只要设备连接到配置了VPN的路由器，所有流量都会�
         根据网络环境选择适合的混淆方式，如 tls1.2_ticket_auth 模拟 HTTPS 流量，可隐藏真实特征。结合协议插件使用，可以提高抗封锁能力和节点可用性。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash.Meta 与原版 Clash 有何不同？</h5></div>
+    <div class="panel-body">
+        Clash.Meta 是社区优化版本，支持更多传输协议，如 Hysteria、TUIC、Reality 等。它还增强了 DNS 处理逻辑和脚本分流能力，适合追求极致速度和灵活规则配置的高级用户。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>V2RayA 在 Linux 系统中如何开机自启？</h5></div>
+    <div class="panel-body">
+        可通过 systemd 创建启动项或在启动脚本中添加 V2RayA 启动命令。编辑 /etc/systemd/system/v2raya.service 文件并设置 `Restart=always`，执行 `systemctl enable v2raya` 使其随系统自动启动。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Shadowrocket 的节点延迟测量如何帮助选择节点？</h5></div>
+    <div class="panel-body">
+        Shadowrocket 会测试节点延迟和丢包率，并根据结果排序。用户可快速选择延迟最低的节点访问网站或视频，提高连接速度和稳定性，优化整体网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Clash 节点测速如何提高访问效率？</h5></div>
     <div class="panel-body">
-        Clash 会周期性检测节点延迟和丢包率，根据测试结果自动选择最优节点。结合策略组和分流规则，用户可体验更快的网页加载、视频播放和游戏连接速度，提高整体网络效率。    </div>
+        Clash 会周期性检测节点延迟和丢包率，根据测试结果自动选择最优节点。结合策略组和分流规则，用户可体验更快的网页加载、视频播放和游戏连接速度，提高整体网络效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 如何通过规则文件优化流量分配？</h5></div>
+    <div class="panel-body">
+        Clash 支持自定义规则文件，可根据域名、IP 或应用类型分流流量。结合策略组使用，可自动将视频、游戏、浏览器等流量分配到最优节点，提高访问速度和网络稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Potatso Lite 是否支持手动节点管理？</h5></div>
+    <div class="panel-body">
+        支持。用户可手动输入节点信息或扫描二维码导入节点，并可进行修改或删除。虽然不支持自动订阅更新，但足以满足轻量用户对节点管理和流量分流的需求。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -384,16 +384,16 @@ A：可以，只要设备连接到配置了VPN的路由器，所有流量都会�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-8-12-vpn-free.htm" title="VPN梯子 | 8月12日20.4M/S|免费Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/SSR节点/V2ray节点订阅节点">VPN梯子 | 8月12日20.4M/S|免费Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/SSR节点/V2ray节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-16-vpn-node.htm" title="VPN梯子 | 8月16日22.4M/S|免费V2ray节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点订阅节点">VPN梯子 | 8月16日22.4M/S|免费V2ray节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/vpn-github-2026-8-27.htm" title="VPN梯子 | 8月27日18.5M/S|免费Clash节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Trojan节点订阅节点">VPN梯子 | 8月27日18.5M/S|免费Clash节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Trojan节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-2-free-node-subscribe.htm" title="VPN梯子 | 9月2日19.7M/S|免费V2ray节点/Singbox节点/Clash节点/Trojan节点/SSR节点/Shadowrocket节点订阅节点">VPN梯子 | 9月2日19.7M/S|免费V2ray节点/Singbox节点/Clash节点/Trojan节点/SSR节点/Shadowrocket节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-8-vpn-free.htm" title="VPN梯子 | 9月8日19.4M/S|免费Trojan节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点订阅节点">VPN梯子 | 9月8日19.4M/S|免费Trojan节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-6-free-vpn-node.htm" title="VPN梯子 | 9月6日20.3M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Singbox节点/Trojan节点/Clash节点订阅节点">VPN梯子 | 9月6日20.3M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Singbox节点/Trojan节点/Clash节点订阅节点</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-8-9.htm" title="VPN梯子 | 8月9日21.6M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/V2ray节点订阅节点">VPN梯子 | 8月9日21.6M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/V2ray节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-6-node-share.htm" title="VPN梯子 | 8月6日20.9M/S|免费Trojan节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点订阅节点">VPN梯子 | 8月6日20.9M/S|免费Trojan节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-vpn-2026-8-11.htm" title="VPN梯子 | 8月11日18.8M/S|免费Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点/SSR节点订阅节点">VPN梯子 | 8月11日18.8M/S|免费Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点/SSR节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-28-free-vpn-node.htm" title="VPN梯子 | 8月28日20.1M/S|免费Clash节点/V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点订阅节点">VPN梯子 | 8月28日20.1M/S|免费Clash节点/V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-8-17.htm" title="VPN梯子 | 8月17日21.1M/S|免费V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/Clash节点订阅节点">VPN梯子 | 8月17日21.1M/S|免费V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/Clash节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-12-vpn-proxy.htm" title="VPN梯子 | 9月12日21.1M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点/Trojan节点订阅节点">VPN梯子 | 9月12日21.1M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点/Trojan节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-4-free-node-subscribe.htm" title="VPN梯子 | 9月4日20.3M/S|免费SSR节点/Trojan节点/Shadowrocket节点/V2ray节点/Clash节点/Singbox节点订阅节点">VPN梯子 | 9月4日20.3M/S|免费SSR节点/Trojan节点/Shadowrocket节点/V2ray节点/Clash节点/Singbox节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/vpn-github-2026-8-15.htm" title="VPN梯子 | 8月15日19.1M/S|免费Clash节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点订阅节点">VPN梯子 | 8月15日19.1M/S|免费Clash节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-13.htm" title="VPN梯子 | 9月13日19.5M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/SSR节点订阅节点">VPN梯子 | 9月13日19.5M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/SSR节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-22-node-share.htm" title="VPN梯子 | 8月22日22.4M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Trojan节点/Clash节点/Singbox节点订阅节点">VPN梯子 | 8月22日22.4M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Trojan节点/Clash节点/Singbox节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/share-vpn-2026-9-3.htm" title="VPN梯子 | 9月3日18.7M/S|免费SSR节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/Trojan节点订阅节点">VPN梯子 | 9月3日18.7M/S|免费SSR节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/Trojan节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-24-top-vpn-node.htm" title="VPN梯子 | 8月24日22.2M/S|免费Singbox节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点订阅节点">VPN梯子 | 8月24日22.2M/S|免费Singbox节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/mianfei-vpn-2026-8-7.htm" title="VPN梯子 | 8月7日20.2M/S|免费Clash节点/V2ray节点/Shadowrocket节点/Trojan节点/Singbox节点/SSR节点订阅节点">VPN梯子 | 8月7日20.2M/S|免费Clash节点/V2ray节点/Shadowrocket节点/Trojan节点/Singbox节点/SSR节点订阅节点</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -405,7 +405,7 @@ A：可以，只要设备连接到配置了VPN的路由器，所有流量都会�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
+                <h4><span class="badge" style="float: right;">20</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
